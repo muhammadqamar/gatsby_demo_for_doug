@@ -13,6 +13,7 @@ module.exports = {
         name: "markdown-pages",
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {

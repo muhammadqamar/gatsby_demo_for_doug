@@ -1,0 +1,107 @@
+@import "./default.scss";
+
+.Team {
+    background-color: $bg-primary;
+    background-image: url("../images/topo-lines.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: $bg-text;
+    padding: 50px 20px 170px;
+
+    .content {
+        max-width: 1140px;
+        padding: 0px 20px;
+        margin: 80px auto 0px;
+    }
+
+    h2 {
+        font-family: Aventa;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 60px;
+        /* identical to box height, or 125% */
+
+        text-align: center;
+    }
+
+    .flex-team {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width:1050px) {
+            padding: 0px 30px;
+        }
+
+        @media (max-width:991px) {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            display: table;
+            text-align: center;
+
+        }
+
+
+
+        .item {
+
+            position: relative;
+            padding-top: 50px;
+            left: 0;
+
+            @media (max-width:991px) {
+                width: 100%;
+                margin-top: 70px;
+                ;
+            }
+        }
+
+        .doodle {
+            position: absolute;
+            top: 0;
+
+            left: -25px;
+
+            @media (max-width:991px) {
+                left: 50%;
+                transform: translate(-51%);
+            }
+        }
+
+        h5 {
+
+            font-family: Aventa;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+            margin: 40px 0px 20px
+        }
+
+        p {
+
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+
+            opacity: 0.8;
+            margin: 0;
+            max-width: 450px;
+
+            @media (max-width:1050px) {
+                max-width: 290px;
+            }
+
+            @media (max-width:991px) {
+                max-width: 570px;
+            }
+        }
+
+    }
+
+
+}

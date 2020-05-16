@@ -1,0 +1,180 @@
+@import "./default.scss";
+
+.Banner {
+  background-color: $bg-primary;
+  background-image: url("../images/topo-lines.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: $bg-text;
+  padding: 70px 20px 170px;
+
+  .content {
+    max-width: 1200px;
+    margin: 80px auto 0px;
+
+    position: relative;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    margin-top: 150px;
+    max-width: 940px;
+    margin: 0 auto;
+
+    @media (max-width:767px) {
+      font-size: 36px;
+      line-height: 54px;
+    }
+
+  }
+
+  .slider p {
+    position: relative;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    &:after {
+      content: url("../images/element_underline.svg");
+      position: absolute;
+      bottom: 0;
+
+      @media (min-width:992px) {
+        right: 75px
+      }
+
+      @media (max-width:991px) {
+        left: 0
+      }
+
+
+    }
+
+    @media (min-width: 1140px) and(max-width:1400px) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    @media (min-width: 992px) and(max-width:1123px) {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) and(max-width:991px) {
+      max-width: 570px;
+      margin: 0 auto;
+    }
+
+    @media (max-width:767px) {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+
+  }
+
+  .spred1 {
+    position: absolute;
+    left: 30px;
+    top: -50px;
+
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+
+  .spred2 {
+    position: absolute;
+    left: -25px;
+    bottom: 40px;
+
+    @media (max-width:767px) {
+      left: 0px;
+      bottom: -80px;
+    }
+  }
+
+  .spred3 {
+    position: absolute;
+    left: 30px;
+
+    top: 30%;
+
+
+
+    @media (max-width:991px) {
+      left: 0px
+    }
+
+    @media (max-width:767px) {
+      top: initial;
+      bottom: -10%;
+      left: 60%
+    }
+  }
+
+  .spred4 {
+    position: absolute;
+    right: 30px;
+    top: -50px;
+  }
+
+  .spred5 {
+    position: absolute;
+    right: 35px;
+
+    bottom: 45%;
+
+    @media (max-width:991px) {
+      right: 5px;
+    }
+  }
+
+  .spred6 {
+    position: absolute;
+    right: -25px;
+    bottom: 40px;
+  }
+
+  .spred7 {
+    position: absolute;
+    left: 21%;
+    bottom: -50px;
+
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+
+  .spred8 {
+    position: absolute;
+    right: 22%;
+    top: -90px;
+
+    @media (max-width:767px) {
+      top: -60px;
+      right: 42%;
+    }
+  }
+
+  .spred9 {
+    position: absolute;
+    left: 18%;
+    top: -15px;
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

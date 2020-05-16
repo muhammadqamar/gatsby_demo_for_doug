@@ -1,0 +1,175 @@
+.Mail {
+  background-color: #000;
+
+  .content {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 30px;
+
+    @media (max-width:767px) {
+      padding: 0px 0px;
+    }
+  }
+
+  .flex-email {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    align-items: center;
+    border-radius: 4px;
+
+    @media (max-width:991px) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width:991px) {
+      padding: 70px 30px;
+      border-radius: 0px;
+    }
+
+
+  }
+
+  .box,
+  .boxsecond {
+    width: 50%;
+
+    @media (max-width:991px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    font-family: Aventa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0;
+
+    @media (max-width:991px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 344px;
+
+    @media (max-width:991px) {
+      margin: 20px auto 0px;
+      max-width: 446px;
+
+
+    }
+
+    ;
+    /* or 150% */
+
+
+    color: #000000;
+
+    opacity: 0.8;
+  }
+
+
+  .flex-form {
+    width: 100%;
+    display: flex;
+
+    @media (max-width:991px) {
+
+      max-width: 480px;
+      margin: 40px auto 0px
+    }
+
+    input {
+      height: 64px;
+      padding: 0px;
+      border: none;
+      margin: 0px;
+      width: 70%;
+      background-color: #ddd;
+      padding-left: 20px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      border: 1px solid #fff;
+
+      &:outline {
+        display: none
+      }
+
+      opacity: 0.4;
+
+      &:focus {
+        border: 1px solid #333;
+        opacity: 1;
+      }
+
+
+    }
+
+    button {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      background: #000;
+      color: #fff;
+      border: none;
+      height: 65px;
+      padding: 0px 30px;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+
+  }
+
+
+
+
+  span,
+  .error {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 10px;
+
+    opacity: 0.3;
+  }
+
+  .error {
+    color: red;
+    opacity: 1;
+  }
+
+  #active {
+    button {
+      background: #36D6B9;
+      border: 1px solid #36D6B9;
+    }
+
+    input {
+      border: 1px solid #36D6B9;
+
+      &:focus {
+        border: 1px solid #36D6B9;
+      }
+    }
+  }
+}

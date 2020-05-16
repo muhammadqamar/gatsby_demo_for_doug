@@ -1,0 +1,14 @@
+@import url("../fonts/fonts.scss");
+$bg-primary: #000;
+$bg-text: #fff;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Aventa";
+}
+
+*:focus {
+  outline-color: transparent
+}
