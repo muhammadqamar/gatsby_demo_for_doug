@@ -12,7 +12,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: heading, label: heading, widget: markdown }
-      - { name: slug-banner, label: slug-banner, widget: "hidden" }
+      - { name: slug, label: slug, widget: hidden, default: banner }
 
   - name: areas
     label: areas
@@ -20,7 +20,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: slug-areas, label: slug-areas, widget: "hidden" }
+      - { name: slug, label: slug, widget: hidden, default: Area }
       - { name: heading, label: heading, widget: string }
       - { name: description, label: Area description, widget: markdown }
 
@@ -36,4 +36,4 @@ collections:
       - { name: info, label: description, widget: markdown }
       - { name: image, label: member photo, widget: image }
       - { name: doodle, label: doodle photo, widget: image }
-      - { name: slug-team, label: slug-team, widget: "hidden" }
+      - { name: slug, label: slug, widget: hidden, default: team }
