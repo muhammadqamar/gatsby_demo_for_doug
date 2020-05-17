@@ -5,22 +5,32 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-
   - name: banner
     label: banner
-    folder: 'markdowns_files/banner'
+    folder: "markdowns_files/banner"
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: path, label: Path }
-      - { name: title, label: Title }
       - { name: heading, label: heading, widget: markdown }
+
+  - name: areas
+    label: areas
+    folder: "markdowns_files/areas"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: heading, label: heading, widget: string }
+      - { name: description, label: Area description, widget: markdown }
+
+      - { name: image, label: Area icon, widget: image }
+
+  - name: team
+    label: team
+    folder: "markdowns_files/teams"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: name, label: name, widget: string }
+      - { name: info, label: description, widget: markdown }
+      - { name: image, label: member photo, widget: image }
+      - { name: doodle, label: doodle photo, widget: image }
