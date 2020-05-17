@@ -4,6 +4,8 @@ import managment from "../../../assets/images/icon-manage.svg"
 import measure from "../../../assets/images/icon-measure.svg"
 import report from "../../../assets/images/icon-report.svg"
 import validate from "../../../assets/images/icon-validate.svg"
+import elements_dots from "../../../assets/images/Dots.svg"
+
 export default function Ares({ slide }) {
   //content
   const content = {
@@ -43,6 +45,7 @@ export default function Ares({ slide }) {
   //jsx
   return (
     <div className="area">
+      <img src={elements_dots} alt="" className="dots" />
       <div className="content">
         <h2>{content.heading}</h2>
         <div className="flex-content">

@@ -27,6 +27,7 @@
     "react-animations": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-loading-screen": "^0.0.17",
     "react-slick": "^0.26.1",
     "slick-carousel": "^1.8.1"
   },
