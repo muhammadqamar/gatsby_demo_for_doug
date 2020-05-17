@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/markdowns`,
-        name: "markdown-pages",
+        path: `${__dirname}/markdowns_files`,
+        name: "markdowns_files",
       },
     },
     `gatsby-plugin-sass`,
