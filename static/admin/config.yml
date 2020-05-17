@@ -17,7 +17,7 @@ collections:
 
   - name: banner
     label: banner
-    folder: banner
+    folder: 'markdowns_files/banner'
     create: true
     fields:
       - { name: path, label: Path }
