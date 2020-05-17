@@ -6,51 +6,18 @@ import report from "../../../assets/images/icon-report.svg"
 import validate from "../../../assets/images/icon-validate.svg"
 import elements_dots from "../../../assets/images/Dots.svg"
 
-export default function Ares({ slide }) {
+export default function Ares({ content_area }) {
   //content
-  const content = {
-    heading: "Bring your impact up to speed in the following areas",
-    areas: [
-      {
-        title: "Impact Management",
-        description:
-          "Here’s some super smart text about Topia being the best place for social organisations to measure all their social impact.",
-        image: managment,
-        comming_soon: false,
-      },
-      {
-        title: "Impact Measurement",
-        description:
-          "Here’s some super smart text about Topia being the best place for social organisations to measure all their social impact.",
-        image: measure,
-        comming_soon: false,
-      },
-      {
-        title: "Impact Validation",
-        description:
-          "Here’s some super smart text about Topia being the best place for social organisations to measure all their social impact.",
-        image: validate,
-        comming_soon: true,
-      },
-      {
-        title: "Impact Reporting ",
-        description:
-          "Here’s some super smart text about Topia being the best place for social organisations to measure all their social impact.",
-        image: report,
-        comming_soon: true,
-      },
-    ],
-  }
 
   //jsx
   return (
     <div className="area">
       <img src={elements_dots} alt="" className="dots" />
       <div className="content">
-        <h2>{content.heading}</h2>
+        <h2>Bring your impact up to speed in the following areass</h2>
         <div className="flex-content">
-          {!!content.areas &&
-            content.areas.map(data => {
+          {!!content_area &&
+            content_area.map(data => {
               return (
                 <Each
                   title={data.title}

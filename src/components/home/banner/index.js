@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css"
 import Sliders from "./slider"
 import "slick-carousel/slick/slick-theme.css"
 import Spread from "./spread.js"
-export default function Banner() {
+export default function Banner({ content_banner }) {
   const [sliderData, setSlider] = useState([])
   //slider settings
   var settings = {
@@ -25,7 +25,7 @@ export default function Banner() {
   //slider-data
 
   const slider = [
-    "We help non-profits and social businesses to measure & manage their impact by providing them with tools build & designed around their needs.",
+    content_banner[0].heading,
     //   "We help non-profits and social businesses to measure & manage their impact by providing them with tools build & designed around their needs.",
     //  "We help impact-driven organizations to measure & manage their social impact by providing them with tools build & designed for their needs.",
   ]
