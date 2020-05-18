@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: muhammadqamar/Topia #replace with your username/repo
+  repo: topiahq/website #replace with your username/repo
 
 media_folder: static/assets
 
