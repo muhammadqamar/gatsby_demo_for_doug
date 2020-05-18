@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Formik } from "formik"
+import addToMailchimp from "gatsby-plugin-mailchimp"
 export default function Signp() {
   const [loading, setloading] = useState(false)
   const [Sucess, setSucess] = useState(false)
@@ -17,8 +18,10 @@ export default function Signp() {
         }
         return errors
       }}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={async (values, { setSubmitting }) => {
         setloading(true)
+        const result = await addToMailchimp(values.email)
+        console.log(result)
         setTimeout(() => {
           alert(JSON.stringify(values, null, 2))
           setloading(false)
