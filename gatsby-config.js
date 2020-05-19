@@ -16,8 +16,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mailchimp",
       options: {
-        endpoint:
-          "https://topiahq.netlify.app/subscribe/post?u=d64288fd715669d492b919c932840f44-us20&id=55ee7329c5", // add your MC list endpoint here; see instructions below
+        endpoint: process.env.GATSBY_MAIL_URL,
       },
     },
     `gatsby-plugin-sass`,

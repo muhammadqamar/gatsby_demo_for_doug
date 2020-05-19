@@ -87,8 +87,11 @@
       display: block;
 
       input {
-        width: 93% !important;
+        width: 95% !important;
         max-width: 100% !important;
+        @media (max-width: 400px) {
+          width: 93% !important;
+        }
       }
     }
 

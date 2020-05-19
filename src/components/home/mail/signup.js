@@ -4,6 +4,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 export default function Signp() {
   const [loading, setloading] = useState(false)
   const [Sucess, setSucess] = useState(false)
+  const [errormail, seterrormail] = useState(false)
   return (
     <Formik
       initialValues={{ email: "" }}
@@ -20,13 +21,16 @@ export default function Signp() {
       }}
       onSubmit={async (values, { setSubmitting }) => {
         setloading(true)
+        seterrormail(false)
         const result = await addToMailchimp(values.email)
         console.log(result)
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2))
+        if (result.result === "success") {
           setloading(false)
           setSucess(true)
-        }, 1000)
+        } else if (result.result === "error") {
+          seterrormail(result.msg)
+          setloading(false)
+        }
       }}
     >
       {({
@@ -60,6 +64,7 @@ export default function Signp() {
           </div>
           <div className="error">
             {errors.email && touched.email && errors.email}
+            {!!errormail && errormail}
           </div>
           <span>
             We care about keeping your data safe. Read our Privacy Policy.
