@@ -2,7 +2,7 @@
 title: "Impact Management "
 slug: Area
 heading: "Impact Management "
-description: Here’s some super smart text about Topia being the best place for
-  social organisations to measure all their social impact.
+description: Managing your organisation's impact is difficult. We help you
+  standardise your processes in rooted in best practice.
 image: /static/assets/icon-manage.svg
 ---
