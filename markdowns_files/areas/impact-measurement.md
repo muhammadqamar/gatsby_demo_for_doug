@@ -2,7 +2,7 @@
 title: Impact Measurement
 slug: Area
 heading: Impact Measurement
-description: Here’s some super smart text about Topia being the best place for
-  social organisations to measure all their social impact.
+description: Measure your impact accurately, target peak efficiency, and know
+  when you get there.
 image: /static/assets/icon-manage.svg
 ---
