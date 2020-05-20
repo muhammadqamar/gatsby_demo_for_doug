@@ -11,11 +11,11 @@ export default function Home() {
         edges {
           node {
             frontmatter {
-              title
               slug
+              heading
+              title
               name
               info
-              heading
               image
               doodle
               description
@@ -30,6 +30,8 @@ export default function Home() {
   const content_area = []
   const content_team = []
   const content_banner = []
+  const content_mail = []
+  const content_area_title = []
   data.allMarkdownRemark.edges.map(data => {
     switch (data.node.frontmatter.slug) {
       case "Area":
@@ -41,6 +43,12 @@ export default function Home() {
       case "banner":
         content_banner.push(data.node.frontmatter)
         break
+      case "mianTitle":
+        content_area_title.push(data.node.frontmatter)
+        break
+      case "mail":
+        content_mail.push(data.node.frontmatter)
+        break
     }
   })
 
@@ -48,10 +56,13 @@ export default function Home() {
     <div className="Home">
       <Banner content_banner={content_banner} />
 
-      <Area content_area={content_area} />
+      <Area
+        content_area={content_area}
+        content_area_title={content_area_title}
+      />
 
       <Team content_team={content_team} />
-      <Mail />
+      <Mail content_mail={content_mail} />
     </div>
   )
 }

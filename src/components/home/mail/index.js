@@ -1,9 +1,10 @@
 import React from "react"
 import Signup from "./signup"
-export default function Mail() {
+export default function Mail({ content_mail }) {
+  console.log(content_mail)
   const content = {
     singup: "Stay tuned",
-    info: "Stay up to date on news from Topia and in the impact space",
+    info: content_mail.length > 0 && content_mail[0].info,
   }
   return (
     <div className="Mail">

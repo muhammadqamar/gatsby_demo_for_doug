@@ -6,15 +6,15 @@ import report from "../../../assets/images/icon-report.svg"
 import validate from "../../../assets/images/icon-validate.svg"
 import elements_dots from "../../../assets/images/Dots.svg"
 
-export default function Ares({ content_area }) {
+export default function Ares({ content_area, content_area_title }) {
   //content
-
+  console.log(content_area_title)
   //jsx
   return (
     <div className="area">
       <img src={elements_dots} alt="" className="dots" />
       <div className="content">
-        <h2>Bring your impact up to speed with:</h2>
+        <h2>{content_area_title.length > 0 && content_area_title[0].name}</h2>
         <div className="flex-content">
           {!!content_area &&
             content_area.map(data => {
