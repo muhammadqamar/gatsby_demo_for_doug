@@ -2,7 +2,7 @@
 title: Impact Reporting
 slug: Area
 heading: Impact Reporting
-description: Here’s some super smart text about Topia being the best place for
-  social organisations to measure all their social impact.
+description: Beautiful standardised reporting solutions, that communicate your
+  successes, and help you to learn from your failures.
 image: /static/assets/icon-report.svg
 ---
