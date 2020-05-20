@@ -28,7 +28,7 @@ export default function Signp() {
           setloading(false)
           setSucess(true)
         } else if (result.result === "error") {
-          seterrormail(result.msg)
+          seterrormail("Email is already subscribed.")
           setloading(false)
         }
       }}

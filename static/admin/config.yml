@@ -23,8 +23,16 @@ collections:
       - { name: slug, label: slug, widget: hidden, default: Area }
       - { name: heading, label: heading, widget: string }
       - { name: description, label: Area description, widget: markdown }
-
       - { name: image, label: Area icon, widget: image }
+
+  - name: Area main title
+    label: Area main title
+    folder: "markdowns_files/area_title"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: name, label: description, widget: markdown }
+      - { name: slug, label: slug, widget: hidden, default: mianTitle }
 
   - name: team
     label: team
@@ -37,3 +45,12 @@ collections:
       - { name: image, label: member photo, widget: image }
       - { name: doodle, label: doodle photo, widget: image }
       - { name: slug, label: slug, widget: hidden, default: team }
+
+  - name: mail
+    label: mail
+    folder: "markdowns_files/mail"
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: info, label: description, widget: markdown }
+      - { name: slug, label: slug, widget: hidden, default: mail }

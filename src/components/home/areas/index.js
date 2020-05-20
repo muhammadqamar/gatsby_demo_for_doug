@@ -14,7 +14,7 @@ export default function Ares({ content_area }) {
     <div className="area">
       <img src={elements_dots} alt="" className="dots" />
       <div className="content">
-        <h2>Bring your impact up to speed in the following areass</h2>
+        <h2>Bring your impact up to speed with:</h2>
         <div className="flex-content">
           {!!content_area &&
             content_area.map(data => {
