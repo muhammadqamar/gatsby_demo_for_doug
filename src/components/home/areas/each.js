@@ -9,10 +9,10 @@ export default function each({ title, description, image, comming_soon }) {
   return (
     <div className="each">
       <img src={require("../../../../static/assets/" + images)} alt="" />
-      <h5>
-        {title}
+      <div className="flex-soon">
+        <h5>{title}</h5>
         {!!comming_soon && <span>SOON</span>}
-      </h5>
+      </div>
       <p>{description}</p>
     </div>
   )

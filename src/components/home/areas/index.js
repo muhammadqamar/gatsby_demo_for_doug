@@ -7,9 +7,6 @@ import validate from "../../../assets/images/icon-validate.svg"
 import elements_dots from "../../../assets/images/Dots.svg"
 
 export default function Ares({ content_area, content_area_title }) {
-  //content
-  console.log(content_area_title)
-  //jsx
   return (
     <div className="area">
       <img src={elements_dots} alt="" className="dots" />
@@ -23,7 +20,7 @@ export default function Ares({ content_area, content_area_title }) {
                   title={data.title}
                   image={data.image}
                   description={data.description}
-                  comming_soon={data.comming_soon}
+                  comming_soon={data.soon}
                 />
               )
             })}

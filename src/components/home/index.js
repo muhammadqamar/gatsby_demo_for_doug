@@ -17,6 +17,7 @@ export default function Home() {
               name
               info
               image
+              soon
               doodle
               description
             }
