@@ -24,6 +24,7 @@ collections:
       - { name: heading, label: heading, widget: string }
       - { name: description, label: Area description, widget: markdown }
       - { name: image, label: Area icon, widget: image }
+      - { label: "soon", name: "soon", widget: "boolean", default: false }
 
   - name: Area main title
     label: Area main title
