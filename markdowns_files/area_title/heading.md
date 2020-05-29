@@ -1,5 +1,5 @@
 ---
 title: heading
-name: "Bring your impact up to speed with:"
+name: We bring your impact  up to speed
 slug: mianTitle
 ---
