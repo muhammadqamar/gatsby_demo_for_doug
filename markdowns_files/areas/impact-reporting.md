@@ -2,8 +2,8 @@
 title: Impact Reporting
 slug: Area
 heading: Impact Reporting
-description: Beautiful standardised reporting solutions, that communicate your
-  successes, and help you to learn from your failures.
+description: Create beautiful impact reports based on your project performace
+  right out of Topia and inspire the world with your learnings and  stories.
 image: /static/assets/icon-report.svg
 soon: true
 ---
