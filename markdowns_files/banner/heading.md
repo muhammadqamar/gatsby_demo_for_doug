@@ -1,6 +1,6 @@
 ---
 title: heading
-heading: We help non-profits and social businesses to measure & manage their
-  impact by providing them with the tools  they need to accelerate their impact.
+heading: We help mission-driven organisations to measure & manage their impact
+  by providing them with tools build around their needs.
 slug: banner
 ---
