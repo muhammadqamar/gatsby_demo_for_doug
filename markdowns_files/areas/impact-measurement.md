@@ -2,8 +2,9 @@
 title: Impact Measurement
 slug: Area
 heading: Impact Measurement
-description: Measure your impact accurately, target peak efficiency, and know
-  when you get there.
+description: Keep track of your impact by monitoring and evaluating your
+  projects accurately, measure your progress automatically and reach your
+  targets with no sweat.
 image: /static/assets/icon-measure.svg
 soon: true
 ---
