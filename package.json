@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@testing-library/react": "^11.2.5",
     "animate.css": "^4.1.0",
     "env": "^0.0.2",
     "env-cmd": "^10.1.0",
@@ -21,6 +22,7 @@
     "gatsby-source-filesystem": "^2.3.1",
     "gatsby-transformer-remark": "^2.8.8",
     "gatsby-transformer-sharp": "^2.5.2",
+    "jest-dom": "^4.0.0",
     "netlify-cms-app": "^2.12.12",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -32,6 +34,7 @@
     "react-helmet": "^6.0.0",
     "react-loading-screen": "^0.0.17",
     "react-slick": "^0.26.1",
+    "react-test": "^0.8.0",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
@@ -48,7 +51,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest test"
   },
   "repository": {
     "type": "git",
