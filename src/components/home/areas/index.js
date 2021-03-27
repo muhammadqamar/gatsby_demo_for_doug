@@ -1,9 +1,5 @@
 import React from "react"
 import Each from "./each"
-import managment from "../../../assets/images/icon-manage.svg"
-import measure from "../../../assets/images/icon-measure.svg"
-import report from "../../../assets/images/icon-report.svg"
-import validate from "../../../assets/images/icon-validate.svg"
 import elements_dots from "../../../assets/images/Dots.svg"
 
 export default function Ares({ content_area, content_area_title }) {
